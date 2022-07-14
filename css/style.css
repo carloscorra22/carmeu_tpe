@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+/* evita espacios en blanco en movil */
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+  body{
+      background-color: white;      
+      font-family: sans-serif;
+      overflow: hidden;
+  }
+
+  a{
+    color: white;
+  }
+
+  p{
+      color: black;
+  }
+
+  img{
+      max-width: 100%;
+  }
+  
+  tr{
+    border: 1px solid black;
+    color:black;
+  }
+
+  td{
+    color:black;
+    border: 1px solid black;
+  }
+  .text{
+    font-size: 50px;
+    text-align: center;
+    margin-left: -1rem;
+  }
+
+  .border{
+      border: 1px solid black;
+  }
+/* movil first */
+  /* iconos y logo */
+  .icono{
+      width: 1rem;
+      height: 1rem;
+      margin: 0.5rem;
+  }
+
+  .logo{
+      display: flex;
+      justify-content: center;
+  }
+
+  .logo__img{
+      width: 50%;
+  }
+/* nav */
+.nav{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow: hidden;
+}
+  .nav__items{
+    color: white;
+    margin: 1rem;
+}
+
+/* menu hamburgesa */
+.menu__ul {
+  display: none;
+}
+input:checked  ~ ul {
+  display:block;
+}
+.menu__input {
+  display: none;
+}
+.menu__label{
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+}
+
+.menu__li {
+  display: block;
+  background: black;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+
+  /* banner */
+  .banner{
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+  }
+
+  .banner__img{
+      width: 100%;
+      height: 12rem;
+  }
+/* productos */
+
+.productos{
+    width: 14rem;
+    height: 18,5rem;
+    margin: 2rem;
+}
+.productos:hover{
+  border: 2px solid black;
+}
+.productos__flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+/* pie de pagina */
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    align-items: center;
+}
+
+.FAQs{
+    list-style: none;
+    cursor: pointer;
+}
+
+/* acordeon de preguntas */
+
+.activo, .pregunta:hover {
+    color: white;
+    border: 1px solid aliceblue;
+    overflow: hidden;
+
+  }
+
+  .panel {
+    background-color: aliceblue;
+    display: none;
+    overflow: hidden;
+    border: 1px solid black;    
+    width: fit-content;
+  }
+
+  .pregunta {
+    color:white;
+    width:fit-content;
+    transition: 0.4s;
+  }
+/* contacto*/
+.contacto{
+    display: flex;
+    justify-content: center;
+}
+
+/* selector de productos */
+.form__flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* producto */
+.compra__flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.compra__form{
+    margin: 3rem;
+}
+.compra__img{
+ width: 24rem;
+ height: 30rem;
+}
+
+/* modo escritorio */
+@media screen and (min-width: 600px){
+
+  .text{
+    font-size: 50px;
+    text-align: center;
+    margin-left: 5rem;
+  }
+
+
+    .logo__img{
+        width: 25%;
+    }
+  /* banner */
+  .banner__img{
+    width: 100%;
+    height: 30rem;
+  }
+
+  /* menu */
+  .menu__li{
+      color: white;
+      margin: 1rem;
+      border-bottom: none;
+    }
+  .menu__label{
+      display: none;
+    }
+  .menu__ul{    
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    }
+    /* nav */
+  .container{
+    width: 50%;
+    margin:  0 auto;
+    max-width: 1320px;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    overflow: hidden;
+  }
+  .nav{
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      overflow: hidden;
+  }
+  .nav__list{
+    list-style: none;
+}
+
+  .nav__box{
+      background-color: black;
+      height: 6rem;
+      overflow: hidden;
+  }
+  /* productos */
+  .productos__flex{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin: 2rem;
+  }
+
+  /* pie */
+  .pie{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+
+    /* producto */
+  .compra__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .compra__form{
+    margin: 3rem;
+  }
+  .compra__img{
+  width: 30rem;
+  height: 40rem;
+  }
+
+
+}

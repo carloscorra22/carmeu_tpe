@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <!-- redes -->
+        <div class="nav">
+            <ul class="nav__list  nav ">
+                <li class="nav__items"><a href="https://www.facebook.com/CarameuAccesorios/"><img src="iconos/facebook.png" alt="icono de facebook" class="icono"><p>facebook</p></a></li>
+                <li class="nav__items"><a href="https://www.instagram.com/carameuaccesorios/?hl=es"><img src="iconos/instagram.png" alt="icono de instagram" class="icono"><p>intagram</p></a></li>
+                <li class="nav__items"><a href="contacto.html"><img src="iconos/sobre.png" alt="icono de mail" class="icono"><p>mail</p></a></li>
+            </ul>
+        </div>
+        <!-- logo -->
+        <a href="index.html"><div class="logo"><img src="imagenes/logo carameu.jpg" alt="logo de carameu" class="logo__img"></div></a>
+
+    </header>
+    <!-- nav -->
+    <section id="nav" class="nav__box">
+        <nav class="nav__box container">
+            <div class="menu">        
+            <input type="checkbox" id="menu" class="menu__input">
+            <label for="menu" class="menu__label"> ☰ </label>
+                <ul class="nav__list menu__ul ">
+                    <li class=" nav__list menu__li "><a href="index.html">inicio</a></li>
+                    <li class=" menu__li "><a href="cargar_productos.html">cargar productos</a></li>
+                    <li class=" menu__li "><a href="#pie">FAQs</a></li>
+                </ul> 
+            </div>
+          </nav>    
+    </section>
+<!-- formulario -->
+<section id="contacto">    
+    <label for="contacto" class="contacto"><h2>Contacto</h2></label>
+    <div class="contacto">
+    <form action="">
+        <fieldset:none class="campos">
+            <label for="nombre">nombre:</label>
+        <br/>
+            <input type="text">
+        <br/>
+            <label for="apellido">apellido:</label>
+        <br/>
+            <input type="text">
+        <br/>
+            <label for="mail">mail</label>
+        <br/>
+            <input type="text" name="mail" id="mail">
+        <br/>
+            <label for="mensaje">mensaje</label>
+        <br/>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br/>
+        <br/>
+        <!-- capcha -->
+        <p>completa el capcha</p>        
+        <button type="button" id="numeros">no soy un robot</button>
+        <p id="capchas"></p>
+        <input type="text" id="input__usuario">
+        <p id="confirmacion"></p>
+        <button type="button" id="comprobar">comprobar</button>
+        <button type="button" id="reinicio">reiniciar</button>
+        <br/>
+        <br/>
+        <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+    </div>
+</section> 
+<br/>
+
+<!-- pie de pagina -->
+<footer id="pie" class="pie">
+        
+    <div class="container">
+        copyright 2022
+    </div>
+
+    <div class="container">
+        FAQs
+        <ul class="FAQs">
+            <li> 
+                <section  class="pregunta">
+                    ¿Trabajan con todas las tarjetas?                        
+                </section>                     
+                <p class="panel">
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>               
+            </li>
+            <br/>
+            <li> 
+                <section  class="pregunta">
+                    ¿Hacen envios a todo el pais?                        
+                </section>                     
+                <p  class="panel">
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>               
+            </li>
+            <br/>
+            <li> 
+                <section  class="pregunta">
+                    ¿Se pueden hacer devoluciones?                        
+                </section>                     
+                <p class="panel">
+                    Lorem ipsum dolor sit amet consectetur.
+                </p>               
+            </li>
+        </ul>
+    </div>
+</footer>
+    <script src="js/script__capcha.js"></script>
+    <script src="js/script__FAQs.js"></script>
+</body>
+</html>
